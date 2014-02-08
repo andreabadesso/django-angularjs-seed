@@ -1,6 +1,4 @@
-"""
-This is your project's master URL configuration, it defines the set of "root" URLs for the entire project
-"""
+"""This is your project's master URL configuration, it defines the set of "root" URLs for the entire project"""
 from django.conf.urls import patterns, url
 from rest_framework.urlpatterns import format_suffix_patterns
 from .views import *
