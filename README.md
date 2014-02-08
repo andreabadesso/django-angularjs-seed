@@ -8,18 +8,24 @@ Initial setup
 -------------
 
 Create your virtual environment.
-In your back end folder, run "pip install -r requirements.txt."
-In your front end folder, run "npm install."
+-In your Django backend folder, run "pip install -r requirements.txt."
+--windows os will have to install bower manually from the backend folder with full path
+
+```
+
+```
+
+-In your AngularJS frontend folder, run "npm install."
 
 Setting up your database
 -------------------------
 
-python manage.py schemamigration public —-init
-python manage.py syncdb
-     Select "no." Do not create a superuser at this time.
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py schemamigration public —-auto // Nothing seems to have changed.
+- python manage.py schemamigration public —-init
+- python manage.py syncdb
+--Select "no." Do not create a superuser at this time.
+- python manage.py migrate
+- python manage.py createsuperuser
+- python manage.py schemamigration public —-auto // Nothing seems to have changed.
 
 Deploying to Heroku
 -------------------
@@ -40,6 +46,9 @@ heroku create # this will create a new heroku app and attach it as a remote repo
 git push heroku master
 heroku open # run this once the previous command finishes, it may take a minute
 ```
+
+
+
 # The seed for Django and AngularJS
 
 This project is an application skeleton.  It uses the Bower package manager to handle
